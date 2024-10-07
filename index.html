@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <div class="login-container">
+    <h1>Login</h1>
+    <form id="loginForm">
+      <label for="cpf">CPF:</label>
+      <input type="text" id="cpf" name="cpf" required>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required>
+
+      <button type="submit">Entrar</button>
+    </form>
+
+    <div id="error-message" style="color: red; display: none;">
+      CPF ou senha incorretos. Tente novamente.
+    </div>
+
+    <div id="service-list" class="services-container" style="display: none;">
+      <h2>Lista de Serviços</h2>
+      <ul class="service-list">
+        <li><i class="fas fa-wrench"></i> Manutenção</li>
+        <li><i class="fas fa-shipping-fast"></i> Entrega</li>
+        <li><i class="fas fa-laptop"></i> Suporte Técnico</li>
+        <li><i class="fas fa-headset"></i> Atendimento ao Cliente</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
